@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Peta', sans-serif;
+  box-sizing: border-box;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("images/freestocks.jpeg");
+  background-size: cover;
+}
+
+.contact .content {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.contact .content h1 {
+  font-family: sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  padding-bottom: 80px;
+  color: rgb(226, 209, 97);
+  margin-bottom: 10px;
+
+}
+
+.contact .content p {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: x-large;
+  font-weight: 400;
+  color: rgb(255, 251, 251);
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: rgb(255, 254, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.container .contactInfo .box .icon:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.container .contactInfo .box .text h3 {
+  display: flex;
+  font-family: 'Lexend Peta', sans-serif;
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgb(92, 201, 255);
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.container .contactInfo .box .text p {
+  display: flex;
+  font-family: 'Lexend Peta', sans-serif;
+  margin-left: 20px;
+  font-size: 16px;
+  color: rgb(250, 246, 246);
+  flex-direction: column;
+  font-weight: 300;
+}
+.second,
+select {
+
+  padding: 8px 10px;
+  margin: 10px 25px;
+  display: inline-block;
+  border: 3px ridge #111;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: #43424200;
+}
+
+.second:focus {
+  border: 3px solid #ffffff;
+  background-color: #faeded;
+}
+
+
+
+#email,
+#name,
+#subject {
+  width: 80%;
+}
+
+
+#email,
+#email_input {
+  text-transform: lowercase;
+}
+
+
+
+.first {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 2%;
+  height: 1em;
+}
+
+
+.btn {
+  width: 140px;
+  background-color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 3px solid white;
+  border-radius: 0;
+  cursor: pointer;
+  color: white;
+}
+
+#btnedit,
+#btnview,
+input[type=submit] {
+
+  float: right;
+
+}
+
+
+.btn:hover {
+  background-color: rgb(24, 49, 117);
+  color: rgb(163, 217, 253);
+  border: 3px ridge rgb(142, 214, 226);
+
+
+}
+
+#btnedit {
+  margin-right: 8px;
+}
+
+#data {
+  color: black;
+  border: 5px ridge black;
+  padding-top: 30px;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  font-size: 17px;
+  padding-bottom: 80px;
+
+}
+
+#touch {
+
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  background-color: #e2b646;
+  box-shadow: 0 10px 20px 3px black;
+}
+
+fieldset {
+  padding: 35px 5px 5px 20px;
+  color: rgb(0, 0, 0);
+  display: inline;
+}
+
+.inputs p {
+
+  text-align: justify;
+  color: #000;
+
+}
+
+.inputs {
+  padding: 8px 75px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 2%;
+  height: 1em;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+h1,
+p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 33px;
+  color: #000;
+}
+
+.main {
+
+  font-family: 'Lexend Peta', sans-serif;
+  width: 80%;
+  padding: 30px;
+  position: relative;
+  z-index: 1000;
+  max-width: 800px;
+  background: rgba(229, 221, 221, 0.1);
+  box-shadow: 0 25px 45px rgba(10, 10, 10, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.25);
+  border-right: 1px solid rgb(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+.main h2{
+  font-size: 30px;
+  color:rgb(0, 0, 0);
+  font-weight: 500;
+}
+.form {
+
+  opacity: 0.5;
+  padding: 24px 24px;
+  color: rgb(220, 218, 218);
+  border: 3px solid #111;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}

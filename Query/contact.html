@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us page</title>
+    <link rel="icon" href="Query/resources/Logo.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script>
+
+
+  function validateForm() {
+
+    var errormsg = "";
+
+
+
+    //Validation
+    if (document.getElementById("name").value == "") {
+      errormsg += "Please fill the Full Name field.\n";
+
+    }
+
+    if (document.getElementById("email").value == "") {
+      errormsg += "Please fill the E-mail field.\n";
+
+    }
+
+
+    if (document.getElementById("type_sub").value == "none") {
+      errormsg += "Please select the Query Subject field.\n";
+
+    }
+
+    if (document.getElementById("note").value == "") {
+      errormsg += "Please fill the Query details.";
+
+    }
+
+    if (errormsg != "") {
+      alert(errormsg);
+      return false;
+    }
+
+    if (errormsg == "") {
+
+
+
+      document.getElementById("enquery").style.display = "none";
+      document.getElementById("data").style.display = "block";
+      document.getElementById("special").style.display = "block";
+
+      document.getElementById('name_input').innerHTML =
+      document.getElementById("name").value;
+      document.getElementById('email_input').innerHTML =
+      document.getElementById("email").value;
+      document.getElementById('sub_input').innerHTML =
+      document.getElementById("type_sub").value;
+      document.getElementById('detail_input').innerHTML =
+      document.getElementById("note").value;
+
+    }
+
+  }
+
+
+  function editForm() {
+
+    document.getElementById("enquery").style.display = "block";
+    document.getElementById("data").style.display = "none";
+    document.getElementById("special").style.display = "none";
+
+  }
+
+
+
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+
+
+
+
+
+    </script>
+
+<body>
+<!--The form-->
+<div class="wrapper">
+    <!-- nav-bar start -->
+    <div class="top_nav">
+        <div class="left">
+            <div class="logo"><p><span>VLTV</span>Travels</p></div>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#" class="fa fa-google g"></a></li>
+                <li><a href="#" class="fa fa-twitter t"></a></li>
+                <li><a href="#" class="fa fa-instagram i"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom_nav">
+        <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../BuyProduct/Buyproduct.html">Shop</a></li>
+            <li><a href="../images/Gallry.html">Gallery</a></li>
+            <li><a href="../siteMap/SiteMap.html">Site Map</a></li>
+            <li><a href="../Query/contact.html">Contact Us</a></li>
+            <li><a href="../q&a.html">Quiz</a></li>
+        </ul>
+    </div>
+    <!-- nav-bar end -->
+    <section class="contact">
+        <div class="content">
+            <h1>Get In Touch</h1>
+            <p> Want to get in touch? We'll love to hear from you.Please get in touch and our expert support team will
+                answer all your questions. We will get back to you at the earliest!Here's how you can reach us.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>VLTV Travels,<br>No:196 Keyzer Street,<br>Colombo,Sri Lanka.<br> 00400</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+94112245678</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>vltv.travels@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="main">
+                <div id="enquery">
+
+
+                <form action="mailto:livini.20211154@iit.ac.lk" method="post" enctype="text/plain">
+                        <h2>Send Message</h2>
+
+                        <fieldset>
+                            <div class="first">
+                                <label for="name">Full Name:</label>
+                            </div>
+                            <input type="text" name="name" id="name" placeholder="Enter your Full name" size="30"
+                                   class="second">
+
+
+                            <div class="first">
+                                <label for="email">Email Address:</label>
+                            </div>
+                            <input type="email" name="email" id="email" placeholder="myname@example.com" size="30"
+                                   class="second">
+
+                        </fieldset>
+                        <fieldset>
+                            <legend><b>Query Details</b></legend>
+
+                            <div class="first">
+                                <label>Theme of the query: </label>
+                            </div>
+                            <select name="type" id="type_sub" class="second">
+                                <option value="none">-</option>
+
+                                <option value="Product & Stock Enquiries">Product & Stock Enquiries</option>
+                                <option value="Payment, Account & Technical">Payment, Account & Technical</option>
+                                <option value="Delivery & Tracking">Delivery & Tracking</option>
+                                <option value="Missing & Incorrect Items Recieved">Missing & Incorrect Items Recieved
+                                </option>
+                                <option value="Returns, Refunds & Faulty Product">Returns, Refunds & Faulty Product
+                                </option>
+                                <option value="Marketing & General">Marketing & General</option>
+                                <option value="Feedback">Feedback</option>
+                            </select>
+                            <br><br>
+
+
+                            <div class="first">
+                                <label for="note">Description:</label>
+                            </div>
+                            <br>
+                            <textarea name="note" id="note" rows="13" cols="30" class="second"
+                                      placeholder="Enter your massege here..."> </textarea><br>
+                        </fieldset>
+
+                        <br><br>
+                        <input type="reset" name="button" value="Reset" class="btn">
+                        <input type="button" onclick="return validateForm()" value="View Query" class="btn"
+                               id="btnview">
+					</div> 	   
+                
+
+						<div style="display: none" id="data">
+
+							<h2>The Query Receipt</h2>
+
+							<div class="inputs">
+
+                    
+								<p><b>Name</b> : <span id='name_input'></span></p>
+								<p><b>E-mail</b> : <span id='email_input'></span></p>
+								<p><b>Query Subject</b> : <span id='sub_input'></span></p>
+								<p><b>Query Details</b> : <span id='detail_input'></span></p>
+
+								<input type="submit" name="button" value="Submit" class="btn" id="special">
+								<input type="button" name="button" value="Edit" class="btn" id="btnedit"
+									   onclick="return editForm()">
+							</div>
+						</div>
+				</form>
+                 				
+            </div>
+    
+        </div>
+
+    </section>
+</div>	
+
+<button class="button-33" onclick="viewProfile_livini();" style="margin-top:80px;">View Editor</button>
+<script>
+    function viewProfile_livini(){
+    window.location = "../Profile/Livini.html";
+    }
+</script>
+</body>
+
+</html>
