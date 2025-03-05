@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editor page - Vinuja</title>
+  <link rel="stylesheet" href="vinuja.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <style>
+    .button-33 {
+  background-color: #c2fbd7;
+  margin-left: 1380px;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- nav-bar start -->
+    <div class="top_nav">
+      <div class="left">
+        <div class="logo"><p><span>VLTV</span>Travels</p></div>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#" class="fa fa-google g"></a></li>
+          <li><a href="#" class="fa fa-twitter t"></a></li>
+          <li><a href="#" class="fa fa-instagram i"></a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="bottom_nav">
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../BuyProduct/Buyproduct.html">Shop</a></li>
+        <li><a href="../images/Gallry.html">Gallery</a></li>
+        <li><a href="../siteMap/SiteMap.html">Site Map</a></li>
+        <li><a href="../Query/contact.html">Contact Us</a></li>
+        <li><a href="../q&a.html">Quiz</a></li>
+      </ul>
+    </div>
+    <!-- nav-bar end -->
+
+    <div class="container">
+      <div class="contain-1">
+        <div class="img-d">
+          <div class="img-d-con"></div>
+        </div>
+      </div>
+      <div class="contain-2">
+        <div class="para">
+          <p id="typedtext"></p>
+        </div>
+      </div>
+    </div>
+    <button class="button-33" onclick="backToHome();" style="margin-top:0;">Back</button>
+  </div>
+    <script>
+    function backToHome(){
+       window.location = "../home.html";
+    }
+    var aText = new Array(
+      "Hi, my name is W.M.Vinuja Piumjith [ IIT - 20211243 ] and I,m an undergraduate software engineer at the University of Westminster[ UOW - w1898916 ]. When choosing student role 3, had to create a small quiz page and an about us page.I created both two pages with my knowledge of HTML,CSS and Javascript. The main challenge was the quiz page where it gives many errors finally, I think I got over it. When I created the about page, it was coded in such a way that you can click on a group member's card and go to the respective member's details page."
+    );
+    var iSpeed = 90; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+
+    function typewriter()
+    {
+      sContents =  ' ';
+      iRow = Math.max(0, iIndex-iScrollAt);
+      var destination = document.getElementById("typedtext");
+
+      while ( iRow < iIndex ) {
+        sContents += aText[iRow++] + '<br />';
+      }
+      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+      if ( iTextPos++ == iArrLength ) {
+        iTextPos = 0;
+        iIndex++;
+        if ( iIndex != aText.length ) {
+          iArrLength = aText[iIndex].length;
+          setTimeout("typewriter()", 50000);
+        }
+      } else {
+        setTimeout("typewriter()", iSpeed);
+      }
+    }
+
+
+    typewriter();
+
+    const rootElement = document.documentElement;
+    const upToTopBtn = document.getElementById("up-to-top");
+
+    function scrollToTop() {
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    </script>
+
+  </body>
+  </html>

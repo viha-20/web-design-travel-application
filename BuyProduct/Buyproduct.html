@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buyproduct</title>
+    <link rel="stylesheet" href="buyproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="store.js"></script>
+    <style>
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  .fa-google{
+    color: black;
+  }
+  /*
+   .fa-google:hover{
+    color:linear-gradient(-60deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  } */
+
+  .fa-facebook {
+    color: black;
+  }/*
+   .fa-instagram:hover{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  }
+  .fa-twitter:hover {
+    background-color: #1DA1F2;
+  } */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+
+  .wrapper .top_nav{
+    width: 100%;
+    height: 65px;
+    background: transparent;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .wrapper .top_nav .left{
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    width: 75px;
+    height: 75px;
+    background-image: url("../resources/logo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    margin-left: 680px;
+  }
+  .name{
+    margin-top: 25px;
+    background-image: url("resources/name.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .wrapper .top_nav .left .logo p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #494949;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: -700px;
+    margin-top: 18px;
+  }
+
+  .wrapper .top_nav .left .logo p span{
+    color: #37a000;
+    font-family: "Mountains of Christmas", cursive;
+  }
+
+  .wrapper .top_nav .left .search_bar input[type="text"]{
+    border: 1px solid #666666;
+    padding: 5px 10px;
+    outline: none;
+    transition: all 0.5s linear;
+  }
+
+  .wrapper .top_nav .left .search_bar input[type="text"]:focus{
+    width: 250px;
+  }
+
+  .wrapper .top_nav .right ul{
+    display: flex;
+  }
+
+  .wrapper .top_nav .right ul li{
+    margin: 0 12px;
+  }
+
+  .wrapper .top_nav .right ul li a{
+    display: block;
+    padding: 8px 6px;
+    color: #666666;
+  }
+
+  .wrapper .bottom_nav{
+    width: 100%;
+    background-color: rgba(192,192,192, 0.4);
+    /* -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(8px); */
+    height: 45px;
+    padding: 0 50px;
+    margin-top: 15px;
+    font-weight: bolder;
+    /* border-top: 2px solid gold;
+    border-bottom: 2px dotted gold; */
+  }
+
+  .wrapper .bottom_nav ul{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding-left:250px;
+    padding-right:250px;
+    align-items: center;
+  }
+
+  .wrapper .bottom_nav ul li a{
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight:bolder;
+  }
+  .wrapper .bottom_nav ul li a:hover{
+    text-decoration: underline;
+  }
+
+  .wrapper .banner img{
+    width: 100%;
+    height: 400px;
+  }
+  
+    
+
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="top_nav">
+        <div class="left">
+            <div class="logo"><p><span>VLTV</span>Travels</p></div>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#" class="fa fa-google"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom_nav">
+        <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="Buyproduct.html">Shop</a></li>
+            <li><a href="../images/Gallry.html">Gallery</a></li>
+            <li><a href="../siteMap/SiteMap.html">Site Map</a></li>
+            <li><a href="../Query/contact.html">Contact Us</a></li>
+            <li><a href="../q&a.html">Quiz</a></li>
+        </ul>
+    </div>
+</div>
+<h1 class="taproname"> Welcome to the VLTV Buyers </h1>
+<div class="card">
+    <div id="product">
+        <img class="product-image" src="16419824001fe679088272bee2b6ac2d53770bdca9.jpg" style="width:25%" alt="">
+        <h1>Coconut Shell Handmade bag</h1>
+        <p class="productprice" id="price1">Rs 1500.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product1" name="PQuantity"
+                                                          min=0></p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct1()" id="0">Add to Cart</button>
+        </p>
+    </div>
+
+
+    <div id="product">
+        <img class="product-image" src="CeylonTraditionalWoodenQueenKolamMAsk.jpg" style="width:25%" alt="">
+        <h1>Srilankan Traditional Mask</h1>
+        <p class="prices">Rs 10000.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product2" name="PQuantity"
+                                                          min=0></p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct2()" id="1">Add to Cart</button>
+        </p>
+    </div>
+
+
+    <div id="product">
+        <img class="product-image" src="CoconutShellCrafts.jpg" style="width:25%" alt="">
+        <h1>Coconut Shell Crafts</h1>
+        <p class="prices">Rs 8000.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product3" name="PQuantity">
+        </p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct3()" id="2">Add to Cart</button>
+        </p>
+    </div>
+
+
+    <div id="product">
+        <img class="product-image" src="CoconutShellCrafts2.jpg" style="width:25%" alt="">
+        <h1>Coconut Shell Crafts</h1>
+        <p class="prices">Rs 1250.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product4" name="PQuantity">
+        </p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct4()" id="3">Add to Cart</button>
+        </p>
+    </div>
+
+
+    <div id="product">
+        <img class="product-image" src="CoconutShellHandMade1.jpg" style="width:25%" alt="">
+        <h1>Coconut Shell HandMade </h1>
+        <p class="prices">Rs 4000.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product5" name="PQuantity">
+        </p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct5()" id="4">Add to Cart</button>
+        </p>
+    </div>
+
+
+    <div id="product">
+        <img class="product-image" src="KeyChain3.jpg" style="width:25%" alt="">
+        <h1>Key Chain </h1>
+        <p class="prices">Rs 750.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product6" name="PQuantity">
+        </p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct6()" id="5">Add to Cart</button>
+        </p>
+    </div>
+
+
+    <div id="product">
+        <img class="product-image" src="jewellery2.jpg" style="width:25%" alt="">
+        <h1>Drop Earrings</h1>
+        <p class="prices">Rs 3000.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product7" name="PQuantity">
+        </p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct7()" id="6">Add to Cart</button>
+        </p>
+    </div>
+
+
+    <div id="product">
+        <img class="product-image" src="SrilankanWoodenPeacockMask.jpg" style="width:25%" alt="">
+        <h1>Srilankan Wooden Peacock Mask</h1>
+        <p class="prices">Rs 65000.00</p>
+        <p><label for="quantity">Quantity: </label><input class="button" type="number" id="product8" name="PQuantity">
+        </p>
+        <p>
+            <button type="button" name="addToCart" onclick="shopedProduct8()" id="7">Add to Cart</button>
+        </p>
+    </div>
+
+
+</div>
+
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+
+    <!-- Form -->
+
+    <div class="details" id="formdata">
+        <h3 id="fhead">Personal Details</h3>
+        <hr>
+        <label for="fname">Name</label>
+        <div class="input_padding">
+            <input type="text" name="fullname" id="name" size="50" class="button">
+        </div>
+        <label for="mail">Email address</label>
+        <div class="input_padding">
+            <input type="text" name="Email" id="email" size="40" class="button">
+        </div>
+        <label for="address"> Address &emsp; &emsp; &ensp;</label>
+        <div class="input_padding">
+            <input type="text" name="Address" id="address" size="40" class="button">
+        </div>
+        <label for="creditcard"> Credit card No &ensp;</label>
+        <div class="input_padding">
+            <input type="number1" id="Cnumber" class="button">
+        </div>
+        <label for="telephone"> Mobile No &emsp; &emsp;</label>
+        <div class="input_padding">
+            <input type="number1" id="Mnumber" class="button">
+        </div>
+    </div>
+
+
+    <div class="orderbutton">
+        <center>
+            <table align="center">
+                <tr>
+                    <td><input type="submit" value="Place Your Order" class="formbuttons"></td>
+                    <td><input type="reset" value="Reset" class="formbuttons"></td>
+                </tr>
+            </table>
+        </center>
+    </div>
+</form>
+<button class="button-33" onclick="viewProfile_vihangi();" style="margin-top:0;">View Editor</button>
+<script>
+  function viewProfile_vihangi(){
+   window.location = "../Profile/profile_v.html";
+ }
+
+
+</script>
+</body>
+</html>

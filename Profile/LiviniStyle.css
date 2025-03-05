@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Ibarra+Real+Nova:wght@700&family=Roboto:wght@500;900&display=swap');
+
+
+body{
+    font-family: poppins;
+}
+.about-wrapper{
+    height: 400px;
+}
+.about-left{                          
+    background-color: #21D4FD;
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 745px;
+    color:#fff
+}
+
+.about-img img{
+    display:block;
+    width: 250px;
+	animation:float 5s ease-in-out infinite;
+    filter: drop-shadow(10px 20px 20px);
+}
+
+ 
+
+.about-right{
+    background:black;
+    height: 745px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    color:white;
+}
+.about-right h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.about-right h2{
+    font-weight: 800;
+}
+
+.about-para p{
+    font-weight: 400;
+    padding: 0.5rem;
+    opacity: 0.9;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Roboto', sans-serif;
+}
+.button{background-color:green;
+color:white;
+border-radius:35px;
+padding:5px 5px;
+font-size:1.2em;
+font-weight:bold;
+}
+
+@media screen and (min-width: 992px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .about-left{
+        position: relative;
+    }
+    @keyframes float{
+        0%{transform:translatey(0px);}
+        50%{transform:translatey(-20px);}
+        100%{transform:translatey(0px);}
+        
+    }
+
+ 
+}

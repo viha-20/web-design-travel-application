@@ -131,8 +131,6 @@
         </div>
         <div class="container">
             <div class="contactInfo">
-
-
                 <div class="box">
                     <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                     <div class="text">
@@ -155,13 +153,13 @@
                     </div>
                 </div>
             </div>
-        
+
 
             <div class="main">
                 <div id="enquery">
 
 
-                <form action="mailto:livini.20211154@iit.ac.lk" method="post" enctype="text/plain">
+                    <form action="mailto:livini.20211154@iit.ac.lk" method="post" enctype="text/plain">
                         <h2>Send Message</h2>
 
                         <fieldset>
@@ -183,7 +181,7 @@
                             <legend><b>Query Details</b></legend>
 
                             <div class="first">
-                                <label>Theme of the query: </label>
+                                <label for="type">Theme of the query: </label>
                             </div>
                             <select name="type" id="type_sub" class="second">
                                 <option value="none">-</option>
@@ -213,35 +211,30 @@
                         <input type="reset" name="button" value="Reset" class="btn">
                         <input type="button" onclick="return validateForm()" value="View Query" class="btn"
                                id="btnview">
-					</div> 	   
-                
+                </div>
 
-						<div style="display: none" id="data">
+                <div style="display: none" id="data">
 
-							<h2>The Query Receipt</h2>
+                    <h2>The Query Receipt</h2>
 
-							<div class="inputs">
+                    <div class="inputs">
 
-                    
-								<p><b>Name</b> : <span id='name_input'></span></p>
-								<p><b>E-mail</b> : <span id='email_input'></span></p>
-								<p><b>Query Subject</b> : <span id='sub_input'></span></p>
-								<p><b>Query Details</b> : <span id='detail_input'></span></p>
+                        <p><b>Name</b> : <span id='name_input'></span></p>
+                        <p><b>E-mail</b> : <span id='email_input'></span></p>
+                        <p><b>Query Subject</b> : <span id='sub_input'></span></p>
+                        <p><b>Query Details</b> : <span id='detail_input'></span></p>
 
-								<input type="submit" name="button" value="Submit" class="btn" id="special">
-								<input type="button" name="button" value="Edit" class="btn" id="btnedit"
-									   onclick="return editForm()">
-							</div>
-						</div>
-				</form>
-                 				
-            </div>
-    
-        </div>
+                        <input type="submit" name="button" value="Submit" class="btn" id="special">
+                        <input type="button" name="button" value="Edit" class="btn" id="btnedit"
+                               onclick="return editForm()">
+                    </div>
+                </div>
+    </section>
+    </form>
+
 
     </section>
-</div>	
-
+</div>
 <button class="button-33" onclick="viewProfile_livini();" style="margin-top:80px;">View Editor</button>
 <script>
     function viewProfile_livini(){

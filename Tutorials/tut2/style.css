@@ -1,0 +1,17 @@
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-color: blue;
+}
+tr,td{
+	border-color: rgb(0, 21, 255);
+}
+.sf{
+	background-color:rgb(144, 224, 239);
+}
+.ls{
+	background-color: rgb(0, 180, 216);
+}
+span{
+	margin-left: 45%;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+
+      <title>Gallery</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    <body>
+     
+
+     <h1>Image Gallery</h1>
+     <br>
+     
+  
+    Background Colour :
+     <!-- change background colour-->
+    <form>
+      
+      <div >
+
+      <select style="font-family:poppins; color:white;background-color:black;font-size: 15px;" onchange="pagecolor(this.value)">
+        <option  value="">By Default</option>
+        <option value="black">Black</option>
+        <option value="#DA70D6">purple</option>
+        <option value="#75bff0">Blue</option>
+        <option value="#cea9cf">Pink</option>
+     
+      
+        
+        
+        </select><span id="quatoes" ><b>“Traveling – it leaves you speechless, then turns you into a storyteller” – Ibn Battuta</b></span>
+        <br>
+
+			
+      Font Colour :<!-- change font colour-->
+      
+      <select style="font-family: poppins; color:white;background-color:black; font-size: 15px;" onchange="textcolor(this.value)">
+        <option value="black">Black</option>
+        <option value="green">green</option>
+        <option value="#1b0d85">Blue</option>
+        <option value="#75bff0">Light Blue</option>
+        <option value="#cea9cf">Pink</option>
+        </select>
+      </div>
+        </form>
+     
+    <br>
+
+    <br>
+    <img src="image3.jpg" id="main" alt="mainimage"/>
+
+    <span id="description"> <u><br>Kandy</u><br>Kandy is famed for sacred Buddhist sites including the Temple of the Tooth (Sri Dalada Maligawa) shrine, celebrated with the grand Esala Perahera annual procession.
+    </span>
+    </body>
+   
+   
+    <div class="thumbnails" id="thumbnails">
+      <img id="1" class="thumbnail img active" src="image3.jpg" alt="kandy" onmouseover="description_kandy()">
+      
+      <img id="2" class="thumb" src="image01.jpeg" alt="ella"   onmouseenter="description_Ella()">                                                    
+      <img id="3" class="thumb"  src="Pict1s.jpg" alt="sigiriya"    onmouseenter="description_Sigiriya()"  >                                             
+      <img id="4"  class="thumb" src="image4.jpg " alt="yala"  onmouseenter="description_Yala()" >                                                     
+      <img id="5"  class="thumb"  src="img3.jpg"  alt="galle" onmouseenter="description_galle()"  >                                                   
+    </div>
+    
+
+  
+ 
+
+<br>
+<br>
+<script src="Gallery.js" >
+
+</script>
+
+</body>
+</html>
+

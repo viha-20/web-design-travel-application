@@ -1,0 +1,62 @@
+.d1{
+	margin-left: auto;
+	margin-right:auto ;
+	width: 580px;
+	background-color: lavender;
+}
+.form{
+	display: block;
+}
+.fn{
+	width: 170px;
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sn{
+	width: 170px;
+	margin-left: 5px;
+}
+.cn{
+	width: 150px;
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.email{
+	width: 448px;
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.in,.out{
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.lbl2{
+	margin-left: 46px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.count{
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.lbl3{
+	position: relative;
+}
+.lbl4{
+	margin-left: 30px;
+}
+.rooms{
+	width: 50px;
+}
+.ad{
+	margin-left: 48px;
+}
+.sp{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
